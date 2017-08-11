@@ -11,7 +11,7 @@ install:
   - PATH="/opt/gtk/bin:$PATH"
   - export LD_LIBRARY_PATH PATH
   - "tar xvfJ gtk+-3.22.18.tar.xz"
-  - "./configure --prefix=/opt/gtk"
+  - "./gtk+-3.22.18/configure --prefix=/opt/gtk"
   - "make"
   - "make install"
   - "pip install requests coveralls nose-htmloutput nose coverage"
