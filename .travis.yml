@@ -3,10 +3,7 @@ python:
   - "3.6.2"
 # command to install dependencies
 install: 
-  - tar xvfJ glib-2.52.1.tar.xz
-  - . ./glib-2.52.1/configure --prefix=/usr --with-pcre=system &&
-  - make
-  - make install
+  - ./install.scr
 #Installing wxpyhon
   - CPPFLAGS="-I/opt/gtk/include"
   - LDFLAGS="-L/opt/gtk/lib"
