@@ -3,7 +3,8 @@ python:
   - "3.6.2"
 # command to install dependencies
 install: 
-  - ./install.scr
+  - chmod 777 install.scr
+  - . ./install.scr
 #Installing wxpyhon
   - CPPFLAGS="-I/opt/gtk/include"
   - LDFLAGS="-L/opt/gtk/lib"
