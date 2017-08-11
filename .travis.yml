@@ -7,6 +7,7 @@ install:
   - chmod 777 install.scr
   - sudo ./install.scr
   - sudo ./install_pango.scr
+  - sudo ./install_cairo.scr
 #Installing wxpyhon
   - CPPFLAGS="-I/opt/gtk/include"
   - LDFLAGS="-L/opt/gtk/lib"
