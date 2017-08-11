@@ -3,7 +3,7 @@ python:
   - "3.6.2"
 # command to install dependencies
 install: 
-  - sudo apt install libmount-de- 
+  - sudo apt install libmount-dev 
   - chmod 777 install.scr
   - . ./install.scr
 #Installing wxpyhon
