@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install: 
   - tar xvfJ glib-2.52.1.tar.xz
-  - ./glib-2.52.1/configure --prefix=/usr --with-pcre=system &&
+  - . ./glib-2.52.1/configure --prefix=/usr --with-pcre=system &&
   - make
   - make install
 #Installing wxpyhon
