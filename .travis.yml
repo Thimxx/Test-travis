@@ -3,24 +3,7 @@ python:
   - "3.6.2"
 # command to install dependencies
 install: 
-  - sudo apt install libmount-dev > output_apt_install.info 
-  - chmod 777 install.scr
-  - sudo ./install.scr
-  - chmod 777 ./install_pango.scr
-  - sudo ./install_pango.scr
-  - chmod 777 ./install_cairo.scr
-  - sudo ./install_cairo.scr
-#Installing wxpyhon
-  - CPPFLAGS="-I/opt/gtk/include"
-  - LDFLAGS="-L/opt/gtk/lib"
-  - PKG_CONFIG_PATH="/opt/gtk/lib/pkgconfig"
-  - export CPPFLAGS LDFLAGS PKG_CONFIG_PATH
-  - LD_LIBRARY_PATH="/opt/gtk/lib"
-  - PATH="/opt/gtk/bin:$PATH"
-  - export LD_LIBRARY_PATH PATH
-  - "tar xvfJ gtk+-3.22.18.tar.xz"
-  - "sudo ./gtk+-3.22.18/configure --prefix=/opt/gtk"
-  - "make"
-  - "make install"
+  - sudo apt-get install libwebkitgtk-dev libjpeg-dev libtiff-dev libgtk2.0-dev libsdl1.2-dev freeglut3 freeglut3-dev libnotify-dev libgstreamerd-3-dev
+  - sudo pip install -Uv wxpython
   - "pip install requests coveralls nose-htmloutput nose coverage"
   - "pip install -U wxpython"
