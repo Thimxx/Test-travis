@@ -5,7 +5,7 @@ python:
 install: 
   - sudo apt install libmount-dev 
   - chmod 777 install.scr
-  - . ./install.scr
+  - sudo . ./install.scr
 #Installing wxpyhon
   - CPPFLAGS="-I/opt/gtk/include"
   - LDFLAGS="-L/opt/gtk/lib"
