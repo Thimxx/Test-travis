@@ -1,15 +1,25 @@
+#Download files
+wget "http://cairographics.org/releases/cairo-1.14.10.tar.xz" 
 #Test
+echo TAR_DECOMPRESS
 tar xvfJ glib-2.52.1.tar.xz
 tar xvfJ pango-1.40.9.tar.xz
 tar xvfJ atk-2.24.0.tar.xz
+tar xvfJ cairo-1.14.10.tar.xz
 ./glib-2.52.1/configure --prefix=/usr --with-pcre=system &&
 make
 make install
-
+echo INSTALL_ATK
 ./atk-2.24.0/configure --prefix=/usr &&
 make
 make install
-
+echo INSTALL_PANGO
 ./pango-1.40.9/configure --prefix=/usr --sysconfdir=/etc &&
+make
+make install
+echo INSTALL_CAIRO
+./configure --prefix=/usr    \
+            --disable-static \
+            --enable-tee &&
 make
 make install
