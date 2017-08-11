@@ -1,0 +1,7 @@
+anguage: python
+python:
+  - "3.6.2"
+# command to install dependencies
+install: 
+  - "pip install requests coveralls nose-htmloutput nose coverage"
+  - "pip install -U wxpython"
