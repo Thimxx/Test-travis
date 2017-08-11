@@ -1,0 +1,5 @@
+#Test
+tar xvfJ glib-2.52.1.tar.xz
+./glib-2.52.1/configure --prefix=/usr --with-pcre=system &&
+make
+make install
