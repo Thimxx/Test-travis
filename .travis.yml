@@ -24,3 +24,7 @@ install:
   - echo "WXPYTHON_INSTALLATION_FINISHED"
   - "pip install requests coveralls nose-htmloutput nose coverage"
   - echo "INSTALLATION_FINISHED"
+script: nosetests -v --with-id  --with-coverage --with-html --cover-package=./
+
+after_success:  
+  - coveralls 
