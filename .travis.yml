@@ -23,6 +23,10 @@ install:
   - "pip install requests coveralls nose-htmloutput nose coverage"
   - echo "INSTALLATION_FINISHED"
   - python -V
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
 script: nosetests -v --with-id  --with-coverage --with-html --cover-package=./
 
 after_success:  

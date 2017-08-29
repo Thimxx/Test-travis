@@ -4,6 +4,6 @@ import wx
 class testWorking(unittest.TestCase):
 
     def testDummy(self):
-        pass
+        app = wx.App(False)
         
         
